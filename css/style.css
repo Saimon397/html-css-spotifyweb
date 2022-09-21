@@ -18,12 +18,35 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    overflow: overlay color: var(--text-white);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    overflow: overlay
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 20px black;
+    background: rgb(83, 83, 83);
+    border-radius: 10px;
+    overflow: overlay
+}
+
+::-webkit-scrollbar-thumb {
+    background: #adff2f;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #619b0a;
 }
 
 header,
 main,
 footer {
-    min-width: 705px;
+    min-width: 600px;
 }
 
 header {
@@ -64,7 +87,7 @@ header a {
 aside {
     position: fixed;
     z-index: 300;
-    height: calc(100vh - 120px);
+    height: calc(100vh - 100px);
     width: 250px;
     background-color: var(--nero-100);
     padding-top: 20px;
@@ -107,13 +130,13 @@ aside #aside-1>section {
     padding-left: 20px;
 }
 
-aside #aside-1>section>div>i {
-    font-size: 40px;
-}
-
 aside #aside-1>section>div {
     display: flex;
     align-items: center;
+}
+
+aside #aside-1>section>div>i {
+    font-size: 40px;
 }
 
 aside #aside-1>section>:first-child {
@@ -214,15 +237,16 @@ main>#main-container>section>h1:first-child {
 }
 
 #main-container {
-    padding-top: 120px;
+    padding-top: 80px;
     padding-bottom: 120px;
-    padding-left: 250px;
+    padding-left: 270px;
 }
 
 #main-nav {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 #main-nav a {
@@ -261,6 +285,7 @@ main>#main-container>section>h1:first-child {
     text-align: center;
     font-size: 20px;
     font-weight: bolder;
+    color: var(--text-white);
 }
 
 #recently-section h2 {
@@ -289,14 +314,11 @@ main h1 {
     width: 90%;
     margin: 5%;
     height: 100%;
-
 }
 
 .album-cover img {
     width: 100%;
 }
-
-
 
 .created-box {
     display: inline-block;
@@ -334,7 +356,7 @@ main h1 {
     border-radius: 100%;
 }
 
-main img:hover:not(#third-row-items img) {
+main img:hover:not(#artist-row-items img) {
     animation-name: img-hover;
     animation-duration: 2s;
     animation-fill-mode: forwards;
@@ -348,7 +370,7 @@ main img:hover:not(#third-row-items img) {
     }
 
     to {
-        opacity: 0.5;
+        opacity: 0.4;
         background-color: var(--nero-100);
         border-radius: 5px;
     }
@@ -367,7 +389,7 @@ ins {
 #album-row-items .img-container>ins {
     position: absolute;
     display: none;
-    top: 40%;
+    top: 33%;
     left: 35%;
     font-size: 40px;
     padding: 5px 14px;
@@ -399,7 +421,7 @@ ins {
     font-size: 30px;
     padding: 12px 18px;
     border-radius: 50%;
-    background-color: orange;
+    background-color: red;
 }
 
 #created-row-items .img-container:hover ins {
@@ -473,7 +495,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-    height: 120px;
+    height: 100px;
     width: 100%;
     background-color: var(--dark-grey);
     left: 0;
@@ -487,13 +509,18 @@ footer #player {
     width: 25%;
 }
 
+footer section .space {
+    margin-left: 50px;
+}
+
 footer #player section i {
-    margin: 0 5px;
+    margin: 0 10px;
     color: #7e7e7e;
 }
 
 footer #player img {
-    margin-right: 10px;
+    margin-right: 20px;
+    width: 26%;
 }
 
 footer h2,
@@ -508,11 +535,16 @@ footer h3 {
 footer h2 {
     font-size: 17px;
     margin-right: 20px;
+    color: var(--text-white);
 }
 
 footer h3 {
     font-size: 15px;
     color: #979797;
+}
+
+footer h4 {
+    color: var(--text-white);
 }
 
 footer img {
@@ -637,3 +669,5 @@ footer .progress-bar-dot2 {
 .progress-bar-back2:hover .progress-bar-front2 {
     background-color: #adff2f;
 }
+
+/***MEDIA-QUERY***/
