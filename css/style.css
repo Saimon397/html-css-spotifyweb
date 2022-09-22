@@ -527,7 +527,7 @@ footer #player {
 }
 
 footer section .space {
-    margin-left: 50px;
+    margin-left: 30px;
 }
 
 footer #player section i {
@@ -537,7 +537,8 @@ footer #player section i {
 
 footer #player img {
     margin-right: 20px;
-    width: 26%;
+    width: 25%;
+    border-radius: 20%;
 }
 
 footer h2,
