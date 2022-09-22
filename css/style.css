@@ -46,7 +46,7 @@ body {
 header,
 main,
 footer {
-    min-width: 576px;
+    max-width: 2170px;
 }
 
 header {
@@ -317,6 +317,7 @@ main h1 {
 #album-row-items {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .album-size {
@@ -398,8 +399,6 @@ main img:hover:not(#artist-row-items img) {
 ins {
     z-index: 600;
 }
-
-/***ROW-WITH-KEYFRAMES***/
 
 #album-row-items .img-container>ins {
     position: absolute;
@@ -499,7 +498,7 @@ ins {
     }
 
     to {
-        opacity: 0.5;
+        opacity: 0.4;
         background-color: black;
         border-radius: 30px;
     }
@@ -756,3 +755,8 @@ footer .progress-bar-dot2 {
     }
 }
 
+@media screen and (max-width: 576px) {
+    .space {
+        display: none;
+    }
+}
