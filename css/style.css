@@ -49,6 +49,8 @@ footer {
     max-width: 2170px;
 }
 
+/***HEADER-AND-ASIDE-SECTION***/
+
 header {
     position: fixed;
     z-index: 100;
