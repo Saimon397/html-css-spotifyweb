@@ -14,11 +14,12 @@
     --text-white: rgba(255, 255, 255, 1);
     --text-grey: rgba(113, 113, 113, 1);
     --lime-green: rgba(173, 255, 47, 1);
+    --green-spotify: rgb(46, 189, 89);
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
-    overflow: overlay color: var(--text-white);
+    overflow: overlay color var(--text-white);
 }
 
 ::-webkit-scrollbar {
@@ -35,12 +36,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #adff2f;
+    background: var(--green-spotify);
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #619b0a;
+    background: rgb(32, 147, 66);
 }
 
 header,
@@ -75,7 +76,7 @@ header div:hover {
     font-size: 20px;
     margin-right: 20px;
     margin-top: 10px;
-    background-color: #202531;
+    background-color: var(--green-spotify);
 }
 
 header a {
@@ -122,7 +123,7 @@ aside li a {
 
 aside li a:hover {
     padding-left: 17px;
-    border-left: 3px solid var(--lime-green);
+    border-left: 3px solid var(--green-spotify);
     color: var(--text-white);
 }
 
@@ -136,7 +137,7 @@ aside #aside-1>section>div {
 }
 
 aside #aside-1 p {
-    color: white;
+    color: var(--text-white);
     display: inline-block;
     vertical-align: middle;
     font-size: 20px;
@@ -144,7 +145,7 @@ aside #aside-1 p {
 
 aside #aside-1>section>ins>a {
     font-size: 40px;
-    color: white;
+    color: var(--text-white);
     vertical-align: middle;
 }
 
@@ -183,7 +184,7 @@ aside div h2>svg {
 aside div h2 {
     display: flex;
     align-items: center;
-    color: white;
+    color: var(--text-white);
 }
 
 aside div a {
@@ -195,7 +196,7 @@ aside div a {
 #playlist-list {
     height: calc((100vh /4) + 80px);
     overflow: auto;
-    margin-bottom: 2000px;
+    margin-bottom: 3000px;
 }
 
 #aside-2 {
@@ -229,7 +230,7 @@ aside div a {
 
 main {
     width: 100%;
-    background-color: var(--deep-blue);
+    background-image: linear-gradient(rgba(20, 25, 34, 1), rgb(46, 189, 89));
     overflow-y: scroll;
     height: 100vh;
 }
@@ -271,11 +272,12 @@ main>#main-container>section>h1:first-child {
     position: absolute;
     bottom: 0;
     content: "";
-    width: 30px;
+    width: 60px;
     height: 3px;
-    background-color: var(--lime-green);
+    background-color: var(--green-spotify);
     top: 24px;
-    left: calc((100% - 30px) / 2);
+    left: calc((100% - 60px) / 2);
+    border-radius: 20%;
 }
 
 #burger-btn {
@@ -402,9 +404,10 @@ ins {
     top: 33%;
     left: 35%;
     font-size: 40px;
-    padding: 5px 14px;
+    padding: 10px 20px;
     border-radius: 50%;
-    background-color: rgb(13, 194, 13);
+    background-color: var(--deep-blue);
+    color: var(--green-spotify);
 }
 
 #album-row-items .img-container:hover ins {
@@ -427,11 +430,12 @@ ins {
     position: absolute;
     display: none;
     top: 35%;
-    left: 38%;
-    font-size: 30px;
-    padding: 12px 18px;
+    left: 35%;
+    font-size: 40px;
+    padding: 13px 23px;
     border-radius: 50%;
-    background-color: red;
+    background-color: var(--deep-blue);
+    color: rgb(179, 29, 26);
 }
 
 #created-row-items .img-container:hover ins {
@@ -462,9 +466,10 @@ ins {
     top: 38%;
     left: 38%;
     font-size: 40px;
-    padding: 5px 14px;
+    padding: 10px 20px;
     border-radius: 50%;
-    background-color: blue;
+    background-color: var(--deep-blue);
+    color: var(--green-spotify);
 }
 
 #artist-row-items .img-container:hover ins {
@@ -507,7 +512,7 @@ footer {
     z-index: 1000;
     height: 100px;
     width: 100%;
-    background-color: var(--dark-grey);
+    background-color: var(--nero-100);
     left: 0;
     bottom: 0;
 }
@@ -525,7 +530,7 @@ footer section .space {
 
 footer #player section i {
     margin: 0 10px;
-    color: #7e7e7e;
+    color: var(--text-grey);
 }
 
 footer #player img {
@@ -550,7 +555,7 @@ footer h2 {
 
 footer h3 {
     font-size: 15px;
-    color: #979797;
+    color: var(--text-grey);
 }
 
 footer h4 {
@@ -574,7 +579,7 @@ footer img {
 }
 
 footer #bar i {
-    color: white;
+    color: var(--text-white);
     font-size: 20px;
     margin: 0 20px;
 }
@@ -589,7 +594,7 @@ footer .progress-bar-dot1 {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background-color: white;
+    background-color: var(--text-white);
     position: absolute;
     bottom: -5px;
     left: calc(30% - 5px);
@@ -601,7 +606,7 @@ footer .progress-bar-dot1 {
 }
 
 .progress-bar-back1:hover .progress-bar-front1 {
-    background-color: #adff2f;
+    background-color: var(--green-spotify);
 }
 
 footer .progress-bar-box1 {
@@ -625,7 +630,7 @@ footer .progress-bar-front1 {
     width: 30%;
     height: 100%;
     border-radius: 2px;
-    background-color: #7e7e7e;
+    background-color: var(--text-grey);
 }
 
 footer .bar-items,
@@ -642,7 +647,7 @@ footer #audio-items {
 
 footer #audio-items i {
     margin: 0 10px;
-    color: white;
+    color: var(--text-white);
 }
 
 footer .progress-bar-back2 {
@@ -658,14 +663,14 @@ footer .progress-bar-front2 {
     width: 90%;
     height: 100%;
     border-radius: 2px;
-    background-color: #7e7e7e;
+    background-color: var(--text-grey);
 }
 
 footer .progress-bar-dot2 {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background-color: white;
+    background-color: var(--text-white);
     position: absolute;
     bottom: -5px;
     left: calc(90% - 5px);
@@ -677,7 +682,7 @@ footer .progress-bar-dot2 {
 }
 
 .progress-bar-back2:hover .progress-bar-front2 {
-    background-color: #adff2f;
+    background-color: var(--green-spotify);
 }
 
 /***MEDIA-QUERY***/
