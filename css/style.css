@@ -164,7 +164,7 @@ aside #aside-1>section>:first-child {
     bottom: 0px;
     width: 100%;
     padding: 0 20px;
-    background-color: var(--nero-100);
+    background-image:(rgba(20, 25, 34, 1));
 }
 
 #user-section hr {
@@ -173,11 +173,12 @@ aside #aside-1>section>:first-child {
 
 #user-section h2 {
     padding-bottom: 10px;
+    font-size: 20px;
 }
 
 aside div h2>svg {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     background-color: var(--text-grey);
     border-radius: 50%;
     display: inline-block;
@@ -516,7 +517,7 @@ footer {
     z-index: 1000;
     height: 100px;
     width: 100%;
-    background-color: var(--nero-100);
+    background-image: linear-gradient(rgba(0, 0, 0, 1),rgba(20, 25, 34, 1) );
     left: 0;
     bottom: 0;
 }
