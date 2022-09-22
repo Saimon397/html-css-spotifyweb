@@ -135,8 +135,17 @@ aside #aside-1>section>div {
     align-items: center;
 }
 
-aside #aside-1>section>div>i {
+aside #aside-1 p {
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+aside #aside-1>section>ins>a {
     font-size: 40px;
+    color: white;
+    vertical-align: middle;
 }
 
 aside #aside-1>section>:first-child {
@@ -174,6 +183,7 @@ aside div h2>svg {
 aside div h2 {
     display: flex;
     align-items: center;
+    color: white;
 }
 
 aside div a {
