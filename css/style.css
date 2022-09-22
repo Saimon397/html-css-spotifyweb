@@ -70,6 +70,7 @@ header div {
     float: right;
     margin: 30px;
     margin-top: 10px;
+    transition: 1s;
 }
 
 header div:hover {
@@ -227,6 +228,8 @@ aside div a {
     position: absolute;
     bottom: 10px;
 }
+
+/***MAIN-SECTION***/
 
 main {
     width: 100%;
@@ -578,7 +581,7 @@ footer img {
     margin-top: 10px;
 }
 
-footer #bar i {
+footer #bar .itm {
     color: var(--text-white);
     font-size: 20px;
     margin: 0 20px;
@@ -588,6 +591,23 @@ footer .bar-items,
 footer .progress-bar-box1 {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.fa-circle-play {
+    font-size: 35px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    color: var(--text-white);
+    transition: 1s;
+}
+
+.fa-circle-play:hover {
+    font-size: 40px;
+    margin-right: 10px;
+    margin-top: 5px;
+    color: var(--green-spotify);
 }
 
 footer .progress-bar-dot1 {
@@ -634,7 +654,7 @@ footer .progress-bar-front1 {
 }
 
 footer .bar-items,
-footer #audio {
+footer #audio-items {
     display: flex;
     justify-content: center;
 }
