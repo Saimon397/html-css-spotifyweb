@@ -286,12 +286,6 @@ main>#main-container>section>h1:first-child {
     border-radius: 20%;
 }
 
-#burger-btn {
-    display: none;
-    top: 20px;
-    font-size: 60px;
-}
-
 #recently-section {
     width: 100%;
 }
