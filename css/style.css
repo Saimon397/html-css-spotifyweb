@@ -43,12 +43,6 @@ body {
     background: rgb(32, 147, 66);
 }
 
-header,
-main,
-footer {
-    max-width: 2170px;
-}
-
 /***HEADER-AND-ASIDE-SECTION***/
 
 header {
