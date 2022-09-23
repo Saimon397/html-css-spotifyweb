@@ -164,7 +164,7 @@ aside #aside-1>section>:first-child {
     bottom: 0px;
     width: 100%;
     padding: 0 20px;
-    background-image:(rgba(20, 25, 34, 1));
+    background-image: (rgba(20, 25, 34, 1));
 }
 
 #user-section hr {
@@ -517,7 +517,7 @@ footer {
     z-index: 1000;
     height: 100px;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 1),rgba(20, 25, 34, 1) );
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(20, 25, 34, 1));
     left: 0;
     bottom: 0;
 }
@@ -711,9 +711,9 @@ footer .progress-bar-dot2 {
 /***MEDIA-QUERY***/
 
 @media screen and (max-width: 1200px) {
-    .album4 {
+    /*.album-4 {
         display: none;
-    }
+    }*/
 
     .album-size {
         width: calc(100% / 3);
@@ -721,9 +721,9 @@ footer .progress-bar-dot2 {
 }
 
 @media screen and (max-width: 992px) {
-    .album3 {
+    /*.album-3 {
         display: none;
-    }
+    }*/
 
     .album-size {
         width: calc(100% / 2);
@@ -764,3 +764,5 @@ footer .progress-bar-dot2 {
         display: none;
     }
 }
+
+/***PAGE-BONUS***/
